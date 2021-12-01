@@ -12,11 +12,11 @@ LIMIT <number of rows>
 
 -- the most basic select
 select * -- all columns from table
-from sales --table to pull from
+from sales_all_years --table to pull from
 limit 100 --only return the top 100 rows
     
 -- out of order
-from sales
+from sales_all_years
 select *
 limit 100
 
@@ -26,7 +26,7 @@ select
     s.saleamount,
     s.rowid
 from 
-    sales s
+    sales_all_years s
 limit 100;
 
 -- aliasing columns
@@ -35,5 +35,5 @@ select
     s.saleamount as Sales,
     s.rowid as RowNum
 from 
-    sales s
+    sales_all_years s
 limit 100;

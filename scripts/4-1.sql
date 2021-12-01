@@ -1,4 +1,4 @@
---Let's understand monthly sales figures
+-- Let's understand monthly sales figures
 select
     ordermonthyear as OrderMonth,
     count(1) as OrderCount, --if every row represents one order we just count 1
